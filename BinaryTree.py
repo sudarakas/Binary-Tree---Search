@@ -1,3 +1,5 @@
+#UWU/CST/16/045
+
 class Node:
     def __init__(self,key):
         self.left = None
@@ -30,5 +32,8 @@ root.right.left = Node(60)
 root.right.right = Node(91)
 
 #search keys
-print(searchNode(root, 91))
-print(searchNode(root, 46565))
+userInput = int(input())
+if(searchNode(root, userInput)):
+    print("Number is available")
+else:
+    print("Number is not available")
